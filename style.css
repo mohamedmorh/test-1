@@ -85,6 +85,7 @@ section{
   border-top-left-radius: 10px;
 }
 article{
+  position: relative;
   height: 500px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -95,6 +96,20 @@ article img{
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+article span{
+  width: 300px;
+  height: 100px;
+  border: 1px dashed var(--light);
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: calc(50% - 150px);
+  top: calc(50% - 50px);
+  color: var(--light);
+  text-align: center;
+  line-height: 100px;
+  text-transform: capitalize;
+  font-size: 20px;
 }
 footer{
   height: 100px;
